@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: MyCart</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+         <!--navbar-->
+        <div class="bg-blue-600 p-4 sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 flex items-center gap-6">
+
+                <!-- Logo -->
+                <div class="flex flex-col leading-none cursor-pointer">
+                <span class="text-white text-xl font-bold">MyCart</span>
+                <span class="text-xs text-white">
+                    Explore <span class="text-yellow-300 font-semibold">Plus</span>
+                </span>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="flex flex-grow max-w-xl bg-white rounded-sm overflow-hidden">
+                <input
+                    type="text"
+                    placeholder="Search for products, brands and more"
+                    class="flex-grow px-4 py-2 outline-none text-sm"
+                />
+                <button class="px-4 text-blue-600 font-bold">
+                    🔍
+                </button>
+                </div>
+
+                <!-- Right Menu -->
+                <div class="flex items-center gap-6 text-white text-lg font-semibold">
+
+                <!-- Login -->
+                <!-- LOGIN DROPDOWN -->
+                <div class="relative group">
+
+                <!-- Login Button -->
+                <button class="bg-white text-blue-600 px-6 py-1 rounded-sm hover:bg-gray-100 font-semibold">
+                    Login
+                </button>
+
+                <!-- Dropdown -->
+                <div
+                    class="absolute left-0 top-full mt-2 w-56 bg-white text-gray-700 shadow-lg rounded hidden group-hover:block z-50"
+                >
+                    <!-- Top -->
+                    <div class="flex justify-between items-center px-4 py-3 border-b">
+                    <span class="text-sm font-medium">New customer?</span>
+                    <a href="#" class="text-blue-600 text-sm font-semibold">Sign Up</a>
+                    </div>
+
+                    <!-- Links -->
+                    <ul class="text-sm">
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">My Profile</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Flipkart Plus Zone</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Orders</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Wishlist</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Rewards</li>
+                    <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Gift Cards</li>
+                    </ul>
+                </div>
+
+                </div>
+
+
+                <!-- Seller -->
+                <span class="cursor-pointer hover:underline">
+                    Become a Seller
+                </span>
+
+                <!-- Cart -->
+                <span class="cursor-pointer hover:underline flex items-center gap-1">
+                    🛒 Cart
+                </span>
+                
+                </div>
+            </div>
+        </div>
+
+        <!--category row-->
+        <div class="bg-white mt-4 px-6 py-4 shadow flex gap-10  overflow-x-auto"> 
+            <!--category items-->
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/mobile.png" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Mobile">
+                <p class="text-sm font-medium group-hover:text-blue-600">Mobiles</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/fashion.png" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Fashion">
+                <p class="text-sm font-medium group-hover:text-blue-600">Fashion</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/electronics.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Electronics">
+                <p class="text-sm font-medium group-hover:text-blue-600">Electronics</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/appliances.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Appliances">
+                <p class="text-sm font-medium group-hover:text-blue-600">Appliances</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/furniture.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Furniture">
+                <p class="text-sm font-medium group-hover:text-blue-600">Furniture</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/beauty.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Beauty">
+                <p class="text-sm font-medium group-hover:text-blue-600">Beauty</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/grocery.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Grocery">
+                <p class="text-sm font-medium group-hover:text-blue-600">Grocery</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/headphone.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Beauty">
+                <p class="text-sm font-medium group-hover:text-blue-600">HeadPhone</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/Speakers.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Grocery">
+                <p class="text-sm font-medium group-hover:text-blue-600">Speakers</p>
+            </div>
+            <div class="flex flex-col items-center min-w-[80px] cursor-pointer group">
+                <img src="img/monitors.jpg" class="h-14 mb-1 transition-transform group-hover:scale-105" alt="Grocery">
+                <p class="text-sm font-medium group-hover:text-blue-600">PC</p>
+            </div>
+        </div><!-- end of category row-->
+
+        <!--hero banner-->
+        <section class="mt-4">
+            <div class="relative w-full overflow-hidden rounded shadow">
+                <!--images-->
+                <img 
+                 src="img/banner1.jpg"
+                 id="bannerImage"
+                alt="Banner"
+                class="w-full h-[160px] sm:h-[220px] md:h-[330px] object-cover transition-all duration-500"/>
+                <!--left button-->
+                <button onclick="prevSlide()"
+                 class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow">
+                    &larr;
+                </button>
+                <!--right button-->
+                <button onclick="nextSlide()"
+                 class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow">
+                    &rarr;
+                </button>
+            </div>
+        </section>
+
+        <!--Top Deals-->  
+        <section class="mt-6 bg-white p-4  rounded shadow">
+            <h2 class="text-lg font-semibold mb-4">Top Deals</h2>
+            <div class="flex gap-4 overflow-x-auto">
+                <!--Product Card-->
+                <div class="min-w-[180px] bg-gray-50 p-3 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                    <img src="img/smartwatch.jpg" alt="Smartwatch" class="h-32 w-full object-contain mb-2">
+                    <p class="text-sm font-medium text-gray-800 line-clamp-2">Noise ColorFit Pro Smartwatch</p>
+                    <div class="mt-1 flex items-center gap-2">
+                        <span class="text-lg font-semibold">₹1,899</span>
+                        <span class="text-sm line-through text-gray-400">₹3,999</span>
+                        <span class="text-sm text-green-600 font-semibold">52%off</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">
+                        Free delivery 🚚
+                    </p>
+                </div>
+
+                <div class="min-w-[180px] bg-gray-50 p-3 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                    <img src="img/projector.jpg" alt="projector" class="h-32 w-full object-contain mb-2">
+                    <p class="text-sm font-medium text-gray-800 line-clamp-2">Projector</p>
+                    <div class="mt-1 flex items-center gap-2">
+                        <span class="text-lg font-semibold">₹3,899</span>
+                        <span class="text-sm line-through text-gray-400">₹7,199</span>
+                        <span class="text-sm text-green-600 font-semibold">52%off</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">
+                        Free delivery 🚚
+                    </p>
+                </div>
+
+                <div class="min-w-[180px] bg-gray-50 p-3 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                    <img src="img/monitors.jpg" alt="monitors" class="h-32 w-full object-contain mb-2">
+                    <p class="text-sm font-medium text-gray-800 line-clamp-2">32 inch Pro SmartTV</p>
+                    <div class="mt-1 flex items-center gap-2">
+                        <span class="text-lg font-semibold">₹12,000</span>
+                        <span class="text-sm line-through text-gray-400">₹28,000</span>
+                        <span class="text-sm text-green-600 font-semibold">52%off</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">
+                        Free delivery 🚚
+                    </p>
+                </div>
+
+                <div class="min-w-[180px] bg-gray-50 p-3 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                    <img src="img/printers.jpg" alt="Printers" class="h-32 w-full object-contain mb-2">
+                    <p class="text-sm font-medium text-gray-800 line-clamp-2"> Dell Wireless Printer</p>
+                    <div class="mt-1 flex items-center gap-2">
+                        <span class="text-lg font-semibold">₹8,899</span>
+                        <span class="text-sm line-through text-gray-400">₹11,999</span>
+                        <span class="text-sm text-green-600 font-semibold">48%off</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">
+                        Free delivery 🚚
+                    </p>
+                </div>
+
+                <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                    <img src="img/printers.jpg" alt="Printers" class="h-32 w-full object-contain mx-auto">
+                    <p class="text-sm mt-2 text-center">Printers</p>
+                    <p class="text-green-600 text-center font-semibold">From ₹3999</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Multi deal section-->
+        <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <!--header-->
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-semibold text-lg">Fashion's Top Deals</h3>
+                    <span class="text-blue-600 font-bold cursor-pointer">&rarr;</span>
+                </div>
+                <!--inner grid-->
+                <div class="grid grid-cols-2 gap-4">
+                    <!--item-->
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/shoes.jpg" alt="shoes" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Girl's Sports Shoes 👞</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/watch.jpg" alt="Watch" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Wrist Watches ⌚</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 90% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/casualshoes.jpg" alt="casualshoes" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Girl's Casual Shoes 👟</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/slippers.jpg" alt="Slippers" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Slippers & Flip Flops </p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                </div>
+            </div>
+            <!--top picks -->
+             <div class="bg-white p-4 rounded shadow">
+                <!--header-->
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-semibold text-lg">Top picks of the Sale</h3>
+                    <span class="text-blue-600 font-bold cursor-pointer">&rarr;</span>
+                </div>
+                <!--inner grid-->
+                <div class="grid grid-cols-2 gap-4">
+                    <!--item-->
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/gloves.jpg" alt="Gloves" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Riding Gloves 🧤</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 50% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/headlight.jpg" alt="headlight" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Headlights & Fog Lamps 🚦</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 50% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/diaper.jpg" alt="diaper" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Baby Diapers 👶</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 30% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/footpad.jpg" alt="footpad" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Pai Relief 👣</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 40% off</p>
+                    </div>
+                </div>
+            </div>
+            <!--new year-->
+            <div class="bg-white p-4 rounded shadow">
+                <!--header-->
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-semibold text-lg">New year Essentials</h3>
+                    <span class="text-blue-600 font-bold cursor-pointer">&rarr;</span>
+                </div>
+                <!--inner grid-->
+                <div class="grid grid-cols-2 gap-4">
+                    <!--item-->
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/laptopbag.jpg" alt="LaptopBag" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Laptop Bags 💻</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/suitcase.jpg" alt="Suitcases" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Suitcases 💼</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/Backpack.jpg" alt="Backpack" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Backpack 🎒</p>
+                        <p class="text-green-600 text-sm font-semibold">Min. 70% off</p>
+                    </div>
+                    <div class="hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/wallets.jpg" alt="Wallets" class="h-28 w-full object-contain mb-1">
+                        <p class="text-sm">Belts & Wallets 👛</p>
+                        <p class="text-green-600 text-sm font-semibold">Special offer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Best Gadgets & Appliances-->
+        <section class="mt-6 bg-white p-4 rounded shadow">
+                <h2 class="text-lg font-semibold mb-4">Best Gadgets & Appliances</h2>
+                <div class="flex gap-4 overflow-x-auto">
+                    <!--Product Card-->
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/trimer.png" alt="Trimer" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Trimer</p>
+                        <p class="text-green-700 text-center font-semibold">Upto 50% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/headphone.jpg" alt="HeadPhone" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">HeadPhone</p>
+                        <p class="text-green-700 text-center font-semibold">Upto 55% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/neckband.jpg" alt="NeckBand" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">NeckBand</p>
+                        <p class="text-green-700 text-center font-semibold">Upto 70% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/Speakers.jpg" alt="Speakers" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Speakers</p>
+                        <p class="text-green-700 text-center font-semibold">upto 40% off</p>
+                    </div>
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/monitors.jpg" alt="monitors" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Monitors</p>
+                        <p class="text-green-700 text-center font-semibold">Upto 70% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/printers.jpg" alt="printers" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Printer</p>
+                        <p class="text-green-700 text-center font-semibold">upto 40% off</p>
+                    </div>
+                </div>
+        </section>
+        <!--Best Winter Essentials-->
+        <section class="mt-6 bg-white p-4 rounded shadow">
+                <h2 class="text-lg font-semibold mb-4">Best Winter Essentials</h2>
+                <div class="flex gap-4 overflow-x-auto">
+                    <!--Product Card-->
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/sweater.png" alt="sweater" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Sweater</p>
+                        <p class="text-green-700 text-center font-semibold">Min 50% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/winterspeacial.jpeg" alt="winterspecial" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Winter Special</p>
+                        <p class="text-green-700 text-center font-semibold">Min 55% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/boot.jpg" alt="Boot" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Boot</p>
+                        <p class="text-green-700 text-center font-semibold">Min 50% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/socks.jpg" alt="socks" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Woolean Socks</p>
+                        <p class="text-green-700 text-center font-semibold">Min 55% off</p>
+                    </div>
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/gloves.jpg" alt="gloves" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">Gloves</p>
+                        <p class="text-green-700 text-center font-semibold">Min 50% off</p>
+                    </div>
+
+                    <div class="min-w-[150px] bg-gray-50 p-2 rounded shadow hover:-translate-y-2 transition cursor-pointer">
+                        <img src="img/footpad.JPG" alt="footpad" class="h-32 w-full object-contain mx-auto">
+                        <p class="text-sm mt-2 text-center">FootPad</p>
+                        <p class="text-green-700 text-center font-semibold">Min 55% off</p>
+                    </div>
+                </div>
+        </section>
+
+        <!--footer-->
+        <footer class="bg-gray-100 text-gray-700 mt-12">
+            <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Customer Care</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-600">How to Buy</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--about-->
+                <div>
+                  <h3 class="font-semibold mb-4">About Us</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Who we are</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                    </ul>
+                </div>
+                <!--policies-->
+                <div>
+                  <h3 class="font-semibold mb-4">Policies</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Return Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Terms of Use</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto text-center text-gray-500">
+                <h2 class="font-semibold">MYCart: India's Ultimate Online Shoping destination</h2>
+                <p class="text-sm">Welcome to MyCart, India trusted and beloved e-commerce platform, established on 2025. With over 1 milion users,
+                    150 milion+ products across 80+ categories.</p>
+            </div>
+            <div class="border-t border-gray mt-8 py-4 text-center text-sm text-gray-500">
+                &copy; 2025 MyCart. All rights reserved.
+            </div>
+        </footer>
+       
+    </div> 
+    <script>
+        const banners = [
+            "img/banner1.jpg",
+            "img/banner2.jpg",
+            "img/banner3.jpg"
+        ];
+        let currentIndex = 0;
+        const bannerImage = document.getElementById("bannerImage");
+
+        function showSlide(index){
+            bannerImage.src = banners[index];
+        }
+
+        function nextSlide(){
+            currentIndex = (currentIndex + 1) % banners.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide(){
+            currentIndex = (currentIndex - 1 + banners.length) % banners.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide,3000); /*auto slide*/
+        
+    </script>  
+</body>
+</html>
